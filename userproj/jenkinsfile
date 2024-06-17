@@ -34,7 +34,7 @@ pipeline {
                     cd  userproj
                     kubectl config use-context DEV
                     kubectl apply -f deployment.yaml
-                    kubectl set image deployment/usermgmtback usermgmtback=kk2104/usermgmtback:v0.0.$BUILD_ID  -n userapp --record=true'''
+                    kubectl set image deployment/usermgmtback usermgmtback=rutukesh/usermgmtback:v0.0.$BUILD_ID  -n userapp --record=true'''
                     
                 }
             }
